@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "name": "forsage1_backend",
+      "script": "./src/server.ts",
+      "interpreter": "./node_modules/.bin/ts-node",
+      "watch": false,
+      "env": {
+        "PORT": 3002,
+        "NODE_ENV": "stage"
+      }
+    }
+  ]
+}

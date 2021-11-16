@@ -1,0 +1,20 @@
+version: "2"
+services:
+  backend_s:
+    ports:
+      - "0.0.0.0:3000:3000"
+    container_name: backend_c
+    restart: always
+    build: ./backend/
+    env_file: ./config/backend.env
+    environment:
+      - NODE_ENV=stage
+  cron_s:
+    ports:
+      - "0.0.0.0:3003:3003"
+    container_name: cron_c
+    restart: always
+    build: ./cronBackend/
+    env_file: ./config/cron.env
+    environment:
+      - NODE_ENV=stage

@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "name": "forsage1_cron",
+      "script": "./src/server.ts",
+      "interpreter": "./node_modules/.bin/ts-node",
+      "watch": false,
+      "env": {
+        "PORT": 3003,
+        "NODE_ENV": "stage"
+      }
+    }
+  ]
+}
